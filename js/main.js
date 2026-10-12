@@ -4,7 +4,9 @@
     { href: "index.html", label: "Home" },
     { href: "about.html", label: "Association" },
     { href: "learn.html", label: "Learn" },
+    { href: "certification.html", label: "Certification" },
     { href: "community.html", label: "Community" },
+    { href: "summit.html", label: "Summit" },
     { href: "careers.html", label: "Careers" },
   ];
 
@@ -37,7 +39,7 @@
       '<div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">IC</span>' +
       '<span class="brand-name">India<span>Cat</span></span></a>' +
       "<p>India's professional home for catastrophe modelers — learn the craft, grow the community, build the industry.</p></div>" +
-      '<div><h4>Explore</h4><a href="about.html">The Association</a><a href="learn.html">Learning paths</a><a href="community.html">Community & events</a><a href="careers.html">Careers</a></div>' +
+      '<div><h4>Explore</h4><a href="about.html">The Association</a><a href="learn.html">Learning paths</a><a href="certification.html">Certification</a><a href="community.html">Community & events</a><a href="summit.html">India Cat Risk Summit</a><a href="careers.html">Careers</a></div>' +
       '<div><h4>Learn</h4><a href="learn.html#foundations">Cat modeling foundations</a><a href="learn.html#tools">Vendor platforms</a><a href="learn.html#code">Modeling with code</a><a href="learn.html#faq">FAQ</a></div>' +
       '<div><h4>Connect</h4><a href="join.html">Join the network</a><a href="community.html#events">Events</a><a href="mailto:hello@indiacat.org">hello@indiacat.org</a></div>' +
       "</div>" +
