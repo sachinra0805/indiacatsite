@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join — IndiaCat</title>
+<meta name="description" content="Join IndiaCat: India's professional network for catastrophe modelers. Free to join.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Join</span>
+    <h1>Become a founding member.</h1>
+    <p>Free to join. Two minutes. Founding members shape the first programs, chapters, and curriculum.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 720px;">
+    <div class="join-form">
+      <form id="joinForm" onsubmit="return handleJoin(event)">
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="city">City</label>
+            <select id="city" name="city" required>
+              <option value="">Select…</option>
+              <option>Bengaluru</option>
+              <option>Mumbai</option>
+              <option>Chennai</option>
+              <option>Gurugram / NCR</option>
+              <option>Hyderabad</option>
+              <option>Pune</option>
+              <option>Other (India)</option>
+              <option>Outside India</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="experience">Experience level</label>
+            <select id="experience" name="experience" required>
+              <option value="">Select…</option>
+              <option>Student / fresher</option>
+              <option>0–2 years</option>
+              <option>2–5 years</option>
+              <option>5–10 years</option>
+              <option>10+ years / leadership</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="role">Current role / employer (optional)</label>
+          <input type="text" id="role" name="role" placeholder="e.g. Senior Analyst, modelling CoE">
+        </div>
+        <div class="field">
+          <label for="interests">What interests you most? (optional)</label>
+          <select id="interests" name="interests">
+            <option value="">Select…</option>
+            <option>Learning & study groups</option>
+            <option>Chapter meetups</option>
+            <option>Mentorship</option>
+            <option>Job board & career help</option>
+            <option>Contributing / volunteering</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-amber" style="width: 100%;">Join IndiaCat</button>
+        <p class="form-note">By joining you agree to the community code of conduct: be rigorous, be generous, be vendor-neutral. We'll email you about chapters, events, and the founding-member program. No spam, ever.</p>
+        <p id="joinThanks" class="form-note" style="display:none; color: var(--amber-600); font-weight: 600;">Thanks — you're on the founding member list. Watch your inbox for the welcome email.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+function handleJoin(e) {
+  e.preventDefault();
+  document.getElementById('joinThanks').style.display = 'block';
+  document.getElementById('joinForm').querySelector('button').disabled = true;
+  return false;
+}
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
